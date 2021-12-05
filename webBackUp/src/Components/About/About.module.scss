@@ -1,0 +1,54 @@
+@import "../Main.scss";
+
+.home{
+    position: absolute;
+    width: 100vw;
+    height: 200vh;
+    background-color: $backgroundColor;
+}
+
+
+.textWrapper{
+    position: absolute;
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+    padding:10vh 10vw;
+    // height: 100vh;
+    width: 80vw;
+    background-color: $backgroundColor;
+}
+
+.text{
+    font-family: "Assistant-Light";
+    white-space: pre-wrap;
+    font-size: 14pt;
+    line-height: 22pt;
+    color: $BrightColor;
+    position: relative;
+    width: 22vw;
+    // height: 80vh;
+}
+.contactBackDrop{
+    position: absolute;
+    width: 100vw;
+    height: 35vh;
+    bottom: 0;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    // flex-direction: column;
+    background-color: $contactBackDropColor;
+}
+
+.wrapper{
+    position: relative;
+    width: 100vw;
+    height: 30vh;
+    background-color: yellowgreen;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+
+}
+

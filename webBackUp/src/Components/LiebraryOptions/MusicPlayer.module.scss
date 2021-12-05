@@ -1,0 +1,26 @@
+.wrapper{
+    position: absolute;
+    width: 600px;
+    height: 70px;
+    // background-color: yellow;
+    bottom: 0px;
+    right: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+
+}
+.icons{
+    position: relative;
+    width: 150px;
+    height: 70px;
+    background-color: black;
+}
+
+.text{
+    position: relative;
+    width: 350px;
+    height: 70px;
+    background-color: white;
+}

@@ -1,0 +1,57 @@
+@import "./../Main.scss";
+
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+.navigationWrapper{
+    position: absolute;
+    width: 100vw;
+    height: 10vh;
+    top: -10vh;
+    background-color: $backgroundColor;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: top 1.5s ease-out;
+    z-index: 1;
+}
+
+.navigation{
+    position: absolute;
+    width: 50vw;
+    height: 10vh;
+    top: 0;
+    right: 0;
+    background-color: $backgroundColor;
+    color: white;
+    display: flex;  
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: "Assistant-Bold";
+}
+
+
+.logo{
+    position: absolute;
+    top:1vh;
+    left: 7vw;
+    font-size: 25pt;
+    font-family: "Amiri-Italic";
+    cursor: pointer;
+    opacity: 0.5;
+
+
+}
+
+
+.button{
+    cursor: pointer;
+&:hover{
+    opacity:0.5;
+    transition:0.2s;
+}
+}

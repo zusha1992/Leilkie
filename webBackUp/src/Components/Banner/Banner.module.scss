@@ -1,0 +1,42 @@
+@import "../Main.scss";
+
+.background{
+top: -150px;
+}
+
+.content{
+    height: 500px;
+   
+
+}
+
+.gradiant{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient( to bottom, $backgroundColor ,white 10%, white 90%, $backgroundColor);
+
+    mix-blend-mode: multiply;
+}
+
+.mainHeader{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    color: $BrightColor;
+    font-size: 80pt;
+    opacity: 0.8;
+    transform: translate(-50%, -50%);
+    font-family: "Amiri-Italic";
+}
+
+.secondHeader{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    color: $BrightColor;
+    font-size: 35pt;
+    font-family: "Amiri-Italic";
+    opacity: 0.8;
+    transform: translate(-50%, -50%);
+
+}

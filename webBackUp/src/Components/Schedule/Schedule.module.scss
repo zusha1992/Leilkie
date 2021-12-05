@@ -1,0 +1,12 @@
+@import "./../Main.scss";
+.schedule{
+    position: absolute;
+    width: 80%;
+    height: 90%;
+    top: 10%;
+    background-color: $backgroundColor;
+    color: white;
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+}
