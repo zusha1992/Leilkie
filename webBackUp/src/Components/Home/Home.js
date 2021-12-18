@@ -8,10 +8,9 @@ const videosList = [
   "/homeVideo4.mp4",
 ];
 
-function Home({ mouseClicked }) {
-  const [video, setVideo] = useState(0);
-  const [isPlay, setIsPlay] = useState(true);
-
+function Home({ mouseClicked, setMouseClicked, isMobile }) {
+  const [video, setVideo] = useState(1);
+  const [isPlay, setIsPlay] = useState(false);
   const videoRef = useRef();
 
   useEffect(() => {
@@ -24,6 +23,7 @@ function Home({ mouseClicked }) {
   useEffect(() => {
     if (mouseClicked) {
       videoRef.current.play();
+      setIsPlay(true);
     }
   }, [mouseClicked]);
 
@@ -50,20 +50,28 @@ function Home({ mouseClicked }) {
   function previousVideo() {
     setVideo((video - 1 + videosList.length) % videosList.length);
   }
+
+  function revealHome() {
+    if (!mouseClicked) {
+      setMouseClicked(true);
+    }
+  }
+
   let playPause =
     isPlay === true ? "url('/Icons/pause.png')" : "url('/Icons/play.png')";
-  return (
-    <div className={classes.home}>
+  let videoElement = (
+    <div className={classes.videoWrapper}>
       <video
         className={classes.video}
+        // style={{ objectPosition: isMobile ? "20% center" : "center" }}
         ref={videoRef}
         onLoadedData={playVideo}
-        // autoPlay={!mouseClicked}
+        autoPlay={false}
         loop
       >
         <source src={videosList[video]} type="video/mp4" />
       </video>
-      <div className={classes.background}></div>
+      {/* <div className={classes.background}></div> */}
       <div
         className={classes.button1}
         onClick={previousVideo}
@@ -88,6 +96,35 @@ function Home({ mouseClicked }) {
           webkitMaskImage: playPause,
         }}
       ></div>
+    </div>
+  );
+
+  return (
+    <div className={classes.home}>
+      <div
+        className={classes.websiteGate}
+        onClick={revealHome}
+        style={{
+          backgroundImage: isMobile
+            ? "url('/pictures/homeMobilePicture.jpg')"
+            : "url('/pictures/homePicture.jpg')",
+          left: mouseClicked ? "-100%" : "0",
+          backgroundPosition: "left",
+        }}
+      ></div>
+      <div
+        className={classes.websiteGate}
+        onClick={revealHome}
+        style={{
+          backgroundImage: isMobile
+            ? "url('/pictures/homeMobilePicture.jpg')"
+            : "url('/pictures/homePicture.jpg')",
+          right: mouseClicked ? "-100%" : "0",
+          backgroundPosition: "right",
+        }}
+      ></div>
+
+      {videoElement}
     </div>
   );
 }

@@ -1,67 +1,31 @@
+import React from "react";
 import classes from "./Gallery.module.scss";
-import PhotoGallery from "react-photo-gallery";
-import { useState, useCallback } from "react";
-import Carousel, { Modal, ModalGateway } from "react-images";
+import "./Gallery.module.scss";
+import "react-image-gallery/styles/css/image-gallery.css";
+
+import Banner from "../Banner/Banner";
+
+import ImageGallery from "react-image-gallery";
 const data = require("./pictures.json").data;
 
-const photos = data.map(({ url, width, height }) => {
-  return { src: url, width: width, height: height };
+const images = data.map(({ url }) => {
+  return {
+    original: url,
+    thumbnail: url,
+    thumbnailHeight: "120px",
+    width: "58%",
+  };
 });
 
-function Gallery() {
-  const [currentImage, setCurrentImage] = useState(0);
-  const [viewerIsOpen, setViewerIsOpen] = useState(false);
-
-  const openLightbox = useCallback((event, { photo, index }) => {
-    setCurrentImage(index);
-    setViewerIsOpen(true);
-  }, []);
-
-  const closeLightbox = () => {
-    setCurrentImage(0);
-    setViewerIsOpen(false);
-  };
-
-  // const [showPicture, setShowPicture] = useState(false);
-
-  // function opemImage() {
-  //   console.log("qqqqq");
-  //   setShowPicture(!showPicture);
-  // }
-  // let switchDiv = !showPicture ? (
-  //   <div className={classes.galleryWrapper}>
-  //     <PhotoGallery
-  //       photos={photos}
-  //       margin={2}
-  //       direction="row"
-  //       onClick={opemImage}
-  //     />
-  //   </div>
-  // ) : (
-  //   <div className={classes.galleryWrapper}>
-  //     <Image showPicture={showPicture} openImage={opemImage} />
-  //   </div>
-  // );
-
+function Gallery({ isMobile }) {
   return (
-    <div className={classes.pageBackground}>
-      <div className={classes.galleryWrapper}>
-        <PhotoGallery photos={photos} onClick={openLightbox} />
-        <ModalGateway>
-          {viewerIsOpen ? (
-            <Modal onClose={closeLightbox}>
-              <Carousel
-                currentIndex={currentImage}
-                views={photos.map((x) => ({
-                  ...x,
-                  srcset: x.srcSet,
-                  caption: x.title,
-                }))}
-              />
-            </Modal>
-          ) : null}
-        </ModalGateway>
-      </div>
+    <div className={classes.wrapper}>
+      <Banner
+        bgImage="/pictures/leikie6.jpg"
+        header="Gallery"
+        isMobile={isMobile}
+      />
+      <ImageGallery items={images} lazyLoad={true} />;
     </div>
   );
 }

@@ -1,26 +1,40 @@
 @import "../Main.scss";
 
 .home{
-    position: absolute;
+    position: relative;
     width: 100vw;
     height: 100vh;
-    z-index: 0;
+    overflow:hidden;
+    background-color: $backgroundColor;
     // background-color: $backgroundColor;
 }
 
+.websiteGate{
+    position: absolute;
+    width: 50vw;
+    height: 100vh;
+    background-color: black;
+    background-position: center;
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    z-index: 1;
+    transition: right 1.5s ease, left 1.5s ease;
+}
+
+
 .video{
-    position: fixed;
+    position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
-    background-size: cover;
     object-fit: cover;
-    transition: filter 0.5s ease;
+      
 }
 
 .background{
-    position: fixed;
+    position: absolute;
     width: 100%;
     height: 100%;
     top: 0;

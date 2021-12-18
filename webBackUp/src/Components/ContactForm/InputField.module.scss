@@ -1,0 +1,34 @@
+@import "./../Main.scss";
+
+.wrapper{
+    position: relative;
+    background-color: transparent;
+    display: flex;
+    align-items:flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+
+.input{
+    position: relative;
+    width: 100%;
+    background-color: $BrightColor;
+    font-family: "Assistant-Light";
+    text-indent: 6px;
+    font-size:18pt ;
+    cursor:auto;
+    border-radius: 5px;
+    color: $backgroundColor;
+}
+.title{
+    position: relative;
+    font-family: "Assistant-Bold";
+    font-size: 16pt;
+    color: $iconColor;
+}
+.error{
+    color: red;
+}
+

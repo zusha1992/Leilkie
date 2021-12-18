@@ -1,22 +1,12 @@
 import classes from "./ContactItem.module.scss";
 
-function ContactItem({ path, url, setActiveContactId, id, activeId, text }) {
+function ContactItem({ path, url, setActiveContactId, id, activeId }) {
   let iconWrapperClass = `${classes.iconWrapper}`;
   if (activeId === id) {
     iconWrapperClass = `${classes.iconWrapper} ${classes.colorOn}`;
   } else if (activeId !== 0) {
     iconWrapperClass = `${classes.iconWrapper} ${classes.colorOff}`;
   }
-  let iconClass = `${classes.icon}`;
-  // if (activeId === id) {
-  //   iconClass = `${classes.icon} ${classes.reveal}`;
-  // } else if (activeId !== 0) {
-  //   iconClass = `${classes.icon} ${classes.hidden}`;
-  // }
-  let titleClass =
-    activeId === id
-      ? `${classes.title} ${classes.reveal}`
-      : `${classes.title} ${classes.hidden}`;
   return (
     <a
       href={url}
@@ -30,7 +20,7 @@ function ContactItem({ path, url, setActiveContactId, id, activeId, text }) {
         onMouseOut={() => setActiveContactId(0)}
       >
         <div
-          className={iconClass}
+          className={classes.icon}
           style={{
             maskImage: path,
             WebkitMaskImage: path,

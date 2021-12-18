@@ -1,60 +1,13 @@
-    @import "./../Main.scss";
+@import "./../Main.scss";
 .wrapper{
     position: absolute;
     width: 100vw;
     height: 100vh;
     background-color: $BrightColor;
-    // overflow-x: hidden;
+
     
    
 }
-.startButton{
-    position: absolute;
-    background-color: transparent;
-    width: 350px;
-    height: 100px;
-    color: white;
-    left: 50%;
-    top: 50%;
-    border-radius: 15%;
-    display: flex;  
-    align-items: center;
-    justify-content: center;
-    font-size: 40pt;
-    border: 2px solid $backgroundColor;
-    font-family: "Amiri-Itali";
-    cursor: pointer;
-    &:hover{
-        font-size: 41pt;
-    }
 
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    opacity: 1;
-    transition: opacity 1.5s ease;
-    // transition-property: top left ;
-}
-
-.curtain1{
-    position: absolute;
-    height: 100%;
-    width: 50%;
-    left: 0;
-    background-color: $backgroundColor;
-    z-index: 1;
-    transition: width 2s ease;
-    cursor: pointer;
-
-}
-.curtain2{
-    position: absolute;
-    height: 100%;
-    width: 50%;
-    right: 0;
-    background-color: $backgroundColor;
-    z-index: 1;
-    transition: width 2s ease;
-    cursor: pointer;
-}
 
 

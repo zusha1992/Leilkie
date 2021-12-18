@@ -11,7 +11,7 @@
     background-color: rgb(9, 9, 83);
     top: 50%;
     transform: translateY(-50%);
-    transition: opacity 0.2s ease-out; 
+    
 }
 .iconWrapper{
     position: absolute;
@@ -22,31 +22,13 @@
     align-items: center;
     justify-content: center;
     border-radius: 50%;
+    transition: opacity 0.3s ease-out; 
 }
 
 .colorOn{
-    opacity: 0.5;
+    opacity: 0.3;
 }
 .colorOff{
     opacity: 1;
 
-}
-
-.hidden{
-    opacity: 0;
-
-
-}
-.reveal{
-    opacity: 1;
-
-}
-.title{
-    position: absolute;
-    font-family: "Assistant-Light";
-    font-size: 12pt;
-    left: 30px;
-    top: 50%;
-    transform: translateY(-50%);
-    transition: opacity 0.1s ease-out;
 }

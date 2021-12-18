@@ -1,3 +1,5 @@
+@import "./../Main.scss";
+
 .contact{
     position: absolute;
     width: 180px;
@@ -8,5 +10,29 @@
     justify-content: space-between;
     left: 50%;
     transform: translateX(-50%);
+    &:hover{
+        
+    }
 
+}
+.credits{
+    position: absolute;
+    font-family: "Assistant-Light";
+    // font-size: 3vw;
+    color: white;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.contactBackDrop{
+    position: relative;
+    width: 100vw;
+    height: 35vh;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    // flex-direction: column;
+    background-color: $contactBackDropColor;
 }

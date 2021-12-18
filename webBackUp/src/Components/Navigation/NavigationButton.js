@@ -7,24 +7,23 @@ function NavigationButton({ to, text, id, activeId, setActiveId }) {
       ? `${classes.active} ${classes.button}`
       : `${classes.hidden} ${classes.button}`;
 
-  const logoClass =
+  const gClefIconClass =
     id !== activeId
-      ? `${classes.violinIcon} ${classes.transparent} `
-      : `${classes.violinIcon} ${classes.active}`;
-  console.log(activeId);
+      ? `${classes.gClefIcon} ${classes.transparent} `
+      : `${classes.gClefIcon} ${classes.active}`;
   return (
     <div className={classes.buttonWrapper}>
       <div
-        className={logoClass}
+        className={gClefIconClass}
         style={{
           maskImage: "url('/Icons/gclefIcon.png')",
           webkitMaskImage: "url('/Icons/gclefIcon.png')",
         }}
-      ></div>
+      />
       <div
         className={buttonClass}
         onMouseEnter={() => setActiveId(id)}
-        onMouseLeave={() => setActiveId(-2)}
+        onMouseLeave={() => setActiveId(-1)}
       >
         <Link to={to}>{text}</Link>
       </div>

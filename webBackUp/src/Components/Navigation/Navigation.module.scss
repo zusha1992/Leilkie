@@ -11,47 +11,51 @@ a, a:hover, a:focus, a:active {
     height: 10vh;
     top: -10vh;
     background-color: $backgroundColor;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
     transition: top 1.5s ease-out;
-    z-index: 1;
+    z-index: 10;
+    font-family: "Assistant-Bold";
+    color: $BrightColor;
+    z-index: 2;
 }
 
-.navigation{
+.horizontalNavigation{
     position: absolute;
     width: 50vw;
     height: 10vh;
     top: 0;
-    right: 0;
-    background-color: $backgroundColor;
-    color: white;
+    right: 5vw;
     display: flex;  
     align-items: center;
-    justify-content: space-evenly;
-    font-family: "Assistant-Bold";
+    justify-content: space-between;
+ 
 }
 
+.collapseButton{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 5vw;
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    background-color: $BrightColor;
+    opacity: 0.7;
+    cursor: pointer;
+    &:hover{
+        opacity: 1;
+    }
+}
 
 .logo{
     position: absolute;
-    top:1vh;
-    left: 7vw;
+    top:50%;
+    transform: translateY(-50%);
+    left: 5vw;
     font-size: 25pt;
     font-family: "Amiri-Italic";
     cursor: pointer;
     opacity: 0.5;
-
-
 }
 
-
-.button{
-    cursor: pointer;
-&:hover{
-    opacity:0.5;
-    transition:0.2s;
-}
-}

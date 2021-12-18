@@ -1,114 +1,104 @@
 {
-    "data": [
-        {
-            "url": "/pictures/00621C3E-D6E9-4890-8D60-3292D067D44C.JPG",
-            "width": 768,
-            "height": 576
-        },
-        {
-            "url": "/pictures/784F2023-83E6-4EC5-877A-15D83E91B0F6.JPG",
-            "width": 1344,
-            "height": 1008
-        },
-        {
-            "url": "/pictures/C0AA5238-C8BB-4C95-A343-8FE01E821218.JPG",
-            "width": 768,
-            "height": 576
-        },
-        {
-            "url": "/pictures/contact.JPG",
-            "width": 1440,
-            "height": 960
-        },
-        {
-            "url": "/pictures/gallery1.jpg",
-            "width": 721,
-            "height": 931
-        },
-        {
-            "url": "/pictures/gallery2.JPG",
-            "width": 786,
-            "height": 1200
-        },
-        {
-            "url": "/pictures/gallery3.jpg",
-            "width": 702,
-            "height": 1100
-        },
-        {
-            "url": "/pictures/gallery4.JPG",
-            "width": 236,
-            "height": 304
-        },
-        {
-            "url": "/pictures/gallery5.jpg",
-            "width": 648,
-            "height": 1024
-        },
-        {
-            "url": "/pictures/gallery6.JPG",
-            "width": 848,
-            "height": 1131
-        },
-        {
-            "url": "/pictures/gallery7.jpg",
-            "width": 1080,
-            "height": 998
-        },
-        {
-            "url": "/pictures/IMG_0651.jpg",
-            "width": 828,
-            "height": 1467
-        },
-        {
-            "url": "/pictures/IMG_1156.jpg",
-            "width": 1200,
-            "height": 800
-        },
-        {
-            "url": "/pictures/IMG_1167.JPG",
-            "width": 244,
-            "height": 466
-        },
-        {
-            "url": "/pictures/IMG_2038.jpg",
-            "width": 4032,
-            "height": 3024
-        },
-        {
-            "url": "/pictures/IMG_2385.JPG",
-            "width": 4032,
-            "height": 3024
-        },
-        {
-            "url": "/pictures/IMG_5853.jpg",
-            "width": 827,
-            "height": 449
-        },
-        {
-            "url": "/pictures/IMG_5854.jpg",
-            "width": 813,
-            "height": 492
-        },
-        {
-            "url": "/pictures/IMG_7334.JPG",
-            "width": 2809,
-            "height": 2724
-        },
-        {
-            "url": "/pictures/leikie2.jpg",
-            "width": 716,
-            "height": 1052
-        },
-        {
-            "url": "/pictures/Leikie3.jpg",
-            "width": 1200,
-            "height": 800
-        },
-        {
-            "url": "/pictures/leikie4.jpg",
-            "width": 822,
-            "height": 704
-        }
-    ]
+  "data": [
+    {
+      "url": "/pictures/00621C3E-D6E9-4890-8D60-3292D067D44C.JPG",
+      "width": 768,
+      "height": 576
+    },
+    {
+      "url": "/pictures/784F2023-83E6-4EC5-877A-15D83E91B0F6.JPG",
+      "width": 1344,
+      "height": 1008
+    },
+    {
+      "url": "/pictures/C0AA5238-C8BB-4C95-A343-8FE01E821218.JPG",
+      "width": 768,
+      "height": 576
+    },
+    {
+      "url": "/pictures/gallery1.jpg",
+      "width": 721,
+      "height": 931
+    },
+    {
+      "url": "/pictures/gallery2.JPG",
+      "width": 786,
+      "height": 1200
+    },
+    {
+      "url": "/pictures/gallery3.jpg",
+      "width": 702,
+      "height": 1100
+    },
+    {
+      "url": "/pictures/gallery4.JPG",
+      "width": 236,
+      "height": 304
+    },
+    {
+      "url": "/pictures/gallery5.jpg",
+      "width": 648,
+      "height": 1024
+    },
+    {
+      "url": "/pictures/gallery6.JPG",
+      "width": 848,
+      "height": 1131
+    },
+    {
+      "url": "/pictures/gallery7.jpg",
+      "width": 1080,
+      "height": 998
+    },
+    {
+      "url": "/pictures/IMG_0651.jpg",
+      "width": 828,
+      "height": 1467
+    },
+    {
+      "url": "/pictures/IMG_1167.JPG",
+      "width": 244,
+      "height": 466
+    },
+    {
+      "url": "/pictures/IMG_2038.jpg",
+      "width": 4032,
+      "height": 3024
+    },
+    {
+      "url": "/pictures/IMG_2385.JPG",
+      "width": 4032,
+      "height": 3024
+    },
+    {
+      "url": "/pictures/IMG_5853.jpg",
+      "width": 827,
+      "height": 449
+    },
+    {
+      "url": "/pictures/IMG_5854.jpg",
+      "width": 813,
+      "height": 492
+    },
+    {
+      "url": "/pictures/IMG_7334.JPG",
+      "width": 2809,
+      "height": 2724
+    },
+    {
+      "url": "/pictures/leikie2.jpg",
+      "width": 716,
+      "height": 1052
+    },
+    {
+      "url": "/pictures/Leikie3.jpg",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "url": "/pictures/leikie4.jpg",
+      "width": 822,
+      "height": 704
+    }
+  ]
 }
